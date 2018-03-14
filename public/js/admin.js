@@ -9,7 +9,10 @@ function ajaxDeleteTip(id){
     $.ajax({
         url: '/dicas/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -35,7 +38,10 @@ function ajaxDeletePromotion(id){
     $.ajax({
         url: '/promocoes/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -62,7 +68,10 @@ function ajaxDeleteEmployee(id){
     $.ajax({
         url: '/profissionais/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -88,7 +97,10 @@ function ajaxDeleteManicure(id){
     $.ajax({
         url: '/deletar/manicure/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -113,7 +125,10 @@ function ajaxDeleteCabelo(id){
     $.ajax({
         url: '/deletar/cabelos/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -139,7 +154,10 @@ function ajaxDeleteMaquiagem(id){
     $.ajax({
         url: '/deletar/maquiagens/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
@@ -165,7 +183,10 @@ function ajaxDeleteSobrancelha(id){
     $.ajax({
         url: '/deletar/sobrancelhas/' + id,
         dataType: "JSON",
-        type: "DELETE",
+        type: "POST",
+        data: {
+            "_method": "DELETE"
+        },
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
